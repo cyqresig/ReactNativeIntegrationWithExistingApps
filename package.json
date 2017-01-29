@@ -1,0 +1,18 @@
+{
+  "name": "react-native-into-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-ios": "react-native bundle --entry-file index.ios.js --bundle-output ./bundle/ios/index.ios.jsbundle --platform ios --assets-dest ./bundle/ios --dev false",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/com/reactnativecomponent/app/src/main/assets/index.android.bundle --assets-dest android/com/reactnativecomponent/app/src/main/res/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "15.4.2",
+    "react-native": "^0.40.0"
+  }
+}
